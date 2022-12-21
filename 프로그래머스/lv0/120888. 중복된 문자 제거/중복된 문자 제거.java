@@ -3,13 +3,9 @@ import java.util.*;
 class Solution {
     public String solution(String my_string) {
         String answer = "";
-        ArrayList<String> list = new ArrayList<String>();
-        for(String str : my_string.split("")){
-            if(!list.contains(str)){
-                list.add(str);
-                answer += str;
-            }else{
-                continue;
+        for(int i = 0; i < my_string.length(); i++){
+            if(!answer.contains(String.valueOf(my_string.charAt(i)))){
+                answer += my_string.charAt(i);
             }
         }
         return answer;

@@ -6,10 +6,8 @@ class Solution {
             while(num != 0){
                 if(num % 10 == k){
                     answer ++;
-                    num /= 10;
-                }else{
-                    num /= 10;
                 }
+                num /= 10;
             }
         }
         return answer;

@@ -16,11 +16,7 @@ class Solution {
                     break;
                 }
             }
-            if(result == Integer.parseInt(num[4])){
-                answer[i] = "O";
-            }else{
-                answer[i] = "X";
-            }
+            answer[i] = result == Integer.parseInt(num[4]) ? "O" : "X";
         }
         return answer;
     }
